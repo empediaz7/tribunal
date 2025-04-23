@@ -7,7 +7,7 @@ services:
     envVars:
       - key: PORT
         value: 10000
-      - key: SQLALCHEMY_DATABASE_URL
+      - key: DATABASE_URL
         value: postgresql://fastapi_db_4nb8_user:vdU13bAVuIritCAeJQ9vO4FkyoqsmuHq@dpg-d04e7h3uibrs73b0rar0-a/fastapi_db_4nb8
       - key: SECRET_KEY
         value: supersecreto123

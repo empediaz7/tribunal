@@ -3,8 +3,12 @@ services:
     name: fastapi-app
     runtime: python
     buildCommand: ""
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    startCommand: ./start.sh
     envVars:
       - key: PORT
         value: 10000
+      - key: SQLALCHEMY_DATABASE_URL
+        value: postgresql://fastapi_db_4nb8_user:vdU13bAVuIritCAeJQ9vO4FkyoqsmuHq@dpg-d04e7h3uibrs73b0rar0-a/fastapi_db_4nb8
+      - key: SECRET_KEY
+        value: supersecreto123
     plan: free
